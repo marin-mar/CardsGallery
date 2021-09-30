@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Карточки | Проект 1</title>
+  </head>
+  <body>
+    <div class="question">
+      <label class="slide-show-txt" for="startSlide">Выберите от 1 до 5:</label>
+      <input class="slide-show-nmb" type="number" id="startSlide" name="startSlide" min="1" max="5" />
+      <button class="slide-show-btn" type="button">Начать с выбранного слайда</button>
+    </div>
+    
+    <div class="container">
+      <ul class="slider">
+        <li
+          class="slide"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1600858963273-2db83fb37043?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1887&q=80');
+          "
+        >
+          <h3>Ferrari</h3>
+        </li>
+        <li
+          class="slide"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1612393266591-c32944e815c8?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80');
+          "
+        >
+          <h3>Lamborghini</h3>
+        </li>
+        <li
+          class="slide"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1563525392903-b6db9ae934dc?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1752&q=80');
+          "
+        >
+          <h3>Harley Davidson</h3>
+        </li>
+        <li
+          class="slide"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1614605637622-84a362f981f1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1654&q=80');
+          "
+        >
+          <h3>Porsche</h3>
+        </li>
+        <li
+          class="slide"
+          style="
+            background-image: url('https://images.unsplash.com/photo-1572894947675-9796386a1979?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1887&q=80');
+          "
+        >
+          <h3>Indian</h3>
+        </li>
+      </ul>
+      <div class="main-window"></div>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

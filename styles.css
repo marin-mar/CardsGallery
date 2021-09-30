@@ -1,0 +1,118 @@
+@import url("https://fonts.googleapis.com/css?family=Muli&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Muli", sans-serif;
+  overflow: hidden;
+  margin: 0;
+  background: #1f1c2c;
+  background: -webkit-linear-gradient(to left, #928dab, #1f1c2c);
+  background: linear-gradient(to left, #928dab, #1f1c2c);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-window {
+  width: 50vw;
+  height: 80vh;
+  border: 1px solid #000;
+  margin-left: 20px;
+  border-radius: 40px;
+  box-shadow: -10px 0px 13px -7px #000000, 10px 0px 13px -7px #000000, 5px 5px 15px 5px rgba(54, 255, 131, 0);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.slider {
+  width: 30vw;
+  height: 80vh;
+  padding: 0 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+}
+
+.slide {
+  width: 30vw;
+  min-height: 30px;
+  border-radius: 20px;
+  margin: 10px;
+  cursor: pointer;
+  color: #fff;
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  transition: all 500ms linear;
+  border: 1px solid #000;
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.slide h3 {
+  position: absolute;
+  font-size: 20px;
+  top: 0;
+  left: 10px;
+  margin: 0;
+}
+
+.slide.active {
+  flex: 10;
+  z-index: 5;
+}
+
+.slide.active h3 {
+  top: 20%;
+  font-size: 24px;
+  transition: all 0.3s linear;
+}
+
+.question {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.slide-show-nmb,
+.slide-show-btn {
+  margin-left: 10px;
+  border-radius: 25px;
+  border: 1px solid #000;
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0, 0, 0, 0);
+}
+
+.slide-show-nmb {
+  padding: 5px 0 5px 35px;
+}
+
+.slide-show-btn {
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+
+.slide-show-btn:hover {
+  transform: scale(0.9);
+}
+
+.slide-show-txt {
+  color: #fff;
+}
