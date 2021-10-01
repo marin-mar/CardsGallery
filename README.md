@@ -1,1 +1,1 @@
-# slideShow
+# CardsGallery
